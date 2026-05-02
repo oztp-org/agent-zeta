@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+reports/
+.git/
+*.json
+run.py
+requirements.txt
+*.md

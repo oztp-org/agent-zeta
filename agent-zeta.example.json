@@ -1,0 +1,16 @@
+{
+  "_comment": "Copy to agent-zeta.json and set your provider and API keys.",
+  "provider": "claude",
+  "providers": {
+    "claude": {
+      "model": "claude-opus-4-7",
+      "api_key_env": "ANTHROPIC_API_KEY"
+    },
+    "openai_compat": {
+      "base_url": "http://localhost:11434/v1",
+      "api_key": "ollama",
+      "model": "llama3.2:latest"
+    }
+  },
+  "output_dir": "reports"
+}
