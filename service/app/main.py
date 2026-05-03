@@ -30,7 +30,7 @@ async def lifespan(app: FastAPI):
     if not api_key:
         log.warning("ANTHROPIC_API_KEY not set — /v1/chat will fail")
     _provider = ClaudeProvider(
-        model=os.environ.get("CLAUDE_MODEL", "claude-opus-4-7"),
+        model=os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6"),
         api_key=api_key,
     )
     log.info("Agent Zeta API ready (model: %s)", _provider.model_name)
